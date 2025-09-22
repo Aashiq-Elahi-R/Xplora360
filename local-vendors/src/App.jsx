@@ -1,6 +1,6 @@
 import React from "react";
-import LocalVendorsMap from "./LocalVendorsMap";
-import "./App.css";
+import LocalVendorsMap from "./app/explore/pages";
+import ".app/explore/App.css";
 
 function App() {
   return (
