@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1b0821, #2a0e4c, #12002e);
+  color: #f0f0f0;
+}
+
+header {
+  border-bottom: 2px solid #a652ff;
+  padding: 20px;
+}
+header .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: auto;
+}
+header h1 {
+  font-size: 28px;
+  margin: 0;
+}
+.subtitle {
+  color: #aaa;
+}
+.time-label {
+  color: #bbb;
+}
+.time-value {
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 20px;
+}
+.card {
+  background: #1e0737;
+  border: 1px solid #6b21a8;
+  border-radius: 16px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 22px;
+}
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #6b21a8;
+  border-radius: 8px;
+  background: #2b104c;
+  color: #f0f0f0;
+  font-size: 14px;
+}
+input:focus {
+  outline: none;
+  border-color: #a652ff;
+}
+button {
+  margin-top: 15px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #9030c5, #c755c9);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+button:hover {
+  transform: scale(1.05);
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.suggestions {
+  position: absolute;
+  background: #2b104c;
+  border: 1px solid #6b21a8;
+  border-radius: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  width: calc(100% - 24px);
+  z-index: 100;
+}
+.suggestions div {
+  padding: 10px;
+  cursor: pointer;
+}
+.suggestions div:hover {
+  background: #341857;
+}
+
+.custom-time {
+  display: none;
+  margin-top: 10px;
+}
+
+.result {
+  text-align: center;
+  border: 1px solid #6b21a8;
+  border-radius: 16px;
+  padding: 30px;
+  background: #2b104c;
+}
+.placeholder {
+  color: #bbb;
+}
+
+.crowd-label {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.no-traffic { background: rgba(128,0,128,0.2); color: #c084fc; }
+.less { background: rgba(75,0,130,0.2); color: #818cf8; }
+.moderate { background: rgba(138,43,226,0.2); color: #a78bfa; }
+.high { background: rgba(219,39,119,0.2); color: #f472b6; }
+.very-high { background: rgba(236,72,153,0.2); color: #f9a8d4; }
